@@ -19,7 +19,7 @@ def predict():
         features = [float(data[feature]) for feature in features_name]
         features = np.array(features).reshape(1, -1)
         scaled_features = scaler.transform(features)
-        prediction = model.predict(scaled_features
+        prediction = model.predict(scaled_features)
         return jsonify({'prediction': [int(prediction[0])]})
         
     except Exception as e:
