@@ -33,7 +33,7 @@ function App() {
     setIsLoading(true);
     setData(event.target);
     try{
-      axios.post('http://127.0.0.1:8000/predict', formData, {
+      axios.post('https://mushroom-api-backend.onrender.com/predict', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
