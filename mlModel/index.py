@@ -18,8 +18,7 @@ def predict():
         features_name = ['cap-shape', 'cap-surface','gill-attachment', 'gill-size','veil-color', 'spore-print-color', 'population', 'habitat']
         features = [float(data[feature]) for feature in features_name]
         features = np.array(features).reshape(1, -1)
-        scaled_features = scaler.transform(features)
-        prediction = model.predict(scaled_features)
+        prediction = model.predict(features)
         return jsonify({'prediction': [int(prediction[0])]})
         
     except Exception as e:
