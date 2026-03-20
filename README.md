@@ -1,4 +1,5 @@
-🍄 Mushroom Safety Predictor
+# 🍄 Mushroom Safety Predictor
+## Live Link: https://mushroom-safety-predictor-web.vercel.app/
 
 A machine learning-powered web application that predicts whether a mushroom is poisonous or edible based on its properties. This tool helps users quickly assess mushroom safety using an easy-to-use interface.
 
